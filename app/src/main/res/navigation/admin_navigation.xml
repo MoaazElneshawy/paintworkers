@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_owners">
+
+    <fragment
+        android:id="@+id/navigation_owners"
+        android:name="com.fatmanaseer.paintapp.presentation.admin.ui.owners.OwnersFragment"
+        android:label="@string/title_owners"
+        tools:layout="@layout/fragment_owners" />
+
+    <fragment
+        android:id="@+id/navigation_workers"
+        android:name="com.fatmanaseer.paintapp.presentation.admin.ui.workers.WorkersFragment"
+        android:label="@string/title_workers"
+        tools:layout="@layout/fragment_workers" />
+
+    <fragment
+        android:id="@+id/navigation_orders"
+        android:name="com.fatmanaseer.paintapp.presentation.admin.ui.orders.OrdersFragment"
+        android:label="@string/title_orders"
+        tools:layout="@layout/fragment_orders" />
+</navigation>

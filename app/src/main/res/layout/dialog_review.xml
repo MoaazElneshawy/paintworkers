@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    android:background="@drawable/bg_dialog"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/closeIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/dialogReviewET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="add your review"
+        android:imeOptions="actionNext"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        app:layout_constraintTop_toBottomOf="@id/closeIV" />
+
+    <RatingBar
+        android:id="@+id/dialogReviewRateBarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:numStars="5"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:stepSize="0.1"
+        android:theme="@style/RatingBar"
+        tools:rating="3" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/dialogAddReviewBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_white_btn"
+        android:text="Add Review"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialogPasswordInput" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

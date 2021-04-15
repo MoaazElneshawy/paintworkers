@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_wallpapers"
+        android:icon="@drawable/ic_wallpaper"
+        android:title="@string/title_wallpapers" />
+
+    <item
+        android:id="@+id/navigation_decorative"
+        android:icon="@drawable/ic_decorative"
+        android:title="@string/title_decorative" />
+
+    <item
+        android:id="@+id/navigation_requests"
+        android:icon="@drawable/ic_requests"
+        android:title="@string/title_requests" />
+
+</menu>
