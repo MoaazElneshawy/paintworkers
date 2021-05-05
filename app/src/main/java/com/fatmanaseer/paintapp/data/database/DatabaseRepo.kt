@@ -1,7 +1,6 @@
 package com.fatmanaseer.paintapp.data.database
 
 import android.content.Context
-import android.os.AsyncTask
 import androidx.lifecycle.LiveData
 import com.fatmanaseer.paintapp.models.admin.Admin
 import com.fatmanaseer.paintapp.models.admin.AdminDao
@@ -67,14 +66,6 @@ class DatabaseRepo(context: Context) {
         CoroutineScope(Dispatchers.IO).async {
             return@async adminDao?.insertAdmin(admin)!!
         }.await()
-//        adminDao?.let { InsertAdminAsync(it).execute(admin) }
-    }
-
-    private class InsertAdminAsync(val adminDao: AdminDao) : AsyncTask<Admin, Void, Void>() {
-        override fun doInBackground(vararg params: Admin?): Void? {
-            params[0]?.let { adminDao.insertAdmin(it) }
-            return null
-        }
     }
 
     fun getAllOwnersForAdmin(): LiveData<List<Owner>>? {

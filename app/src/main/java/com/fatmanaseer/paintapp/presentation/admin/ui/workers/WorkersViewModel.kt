@@ -15,10 +15,10 @@ class WorkersViewModel(application: Application) : AndroidViewModel(application)
         get() = repo.getAllWorkersForAdmin()
 
     fun activeWorker(worker: Worker) {
-       runBlocking {   repo.activeWorkerByAdmin(worker)}
+        runBlocking { repo.activeWorkerByAdmin(worker) }
     }
 
     fun deleteWorker(workerUsername: String) {
-     runBlocking {     repo.deleteWorkerByAdmin(workerUsername)}
+        runBlocking { repo.deleteWorkerByAdmin(workerUsername) }
     }
 }

@@ -1,0 +1,54 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="256dp"
+    android:height="256dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+    <path
+        android:fillColor="#3b2824"
+        android:pathData="m2,2h60v60h-60z" />
+    <path
+        android:fillColor="#f3a845"
+        android:pathData="m32,31h4v10h-4z" />
+    <path
+        android:fillColor="#eecc61"
+        android:pathData="m32,31v7h1a2,2 0,0 0,2 -2v-5z" />
+    <path
+        android:fillColor="#f3a845"
+        android:pathData="m10,42 l2,4h10l2,-4z" />
+    <path
+        android:fillColor="#eecc61"
+        android:pathData="m11,44h8a2,2 0,0 0,2 -2h-11z" />
+    <path
+        android:fillColor="#f3a845"
+        android:pathData="m10,52 l2,4h10l2,-4z" />
+    <path
+        android:fillColor="#eecc61"
+        android:pathData="m11,54h8a2,2 0,0 0,2 -2h-11z" />
+    <path
+        android:fillColor="#bce4f8"
+        android:pathData="m6,6h22v32h-22z" />
+    <path
+        android:fillColor="#e4f5fd"
+        android:pathData="m6,6v29h16a3,3 0,0 0,3 -3v-26z" />
+    <path
+        android:fillColor="#fff"
+        android:pathData="M11,11L17,11A3,3 0,0 1,20 14L20,27A3,3 0,0 1,17 30L11,30A3,3 0,0 1,8 27L8,14A3,3 0,0 1,11 11z" />
+    <path
+        android:fillColor="#4b352f"
+        android:pathData="m36,6h22v52h-22z" />
+    <path
+        android:fillColor="#594139"
+        android:pathData="m36,6v47h14a3,3 0,0 0,3 -3v-44z" />
+    <path
+        android:fillColor="#4b352f"
+        android:pathData="m31,2v39h-29v2h29v8h-29v2h29v9h2v-60z" />
+    <path
+        android:fillColor="#bce4f8"
+        android:pathData="m9.2894,25.2916l6.9986,-6.9986l1.414,1.414l-6.9986,6.9986z" />
+    <path
+        android:fillColor="#bce4f8"
+        android:pathData="m16.2884,25.2927l6.9986,-6.9986l1.414,1.414l-6.9986,6.9986z" />
+    <path
+        android:fillColor="#896f65"
+        android:pathData="M42,11L45,11A3,3 0,0 1,48 14L48,32A3,3 0,0 1,45 35L42,35A3,3 0,0 1,39 32L39,14A3,3 0,0 1,42 11z" />
+</vector>

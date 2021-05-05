@@ -52,7 +52,7 @@ abstract class MyDatabase : RoomDatabase() {
                 synchronized(LOCK) {
                     sInstance = Room.databaseBuilder(
                         context.applicationContext,
-                        MyDatabase::class.java, "test7sasdaddfs621"
+                        MyDatabase::class.java, "MyDataBase"
                     )
                         .build()
                 }

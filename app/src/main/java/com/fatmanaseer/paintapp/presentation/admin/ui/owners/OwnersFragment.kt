@@ -64,6 +64,6 @@ class OwnersFragment : Fragment(), OnOwnersActionsListener {
     }
 
     override fun onActiveOwner(owner: Owner) {
-      ownersViewModel.activeOwner(owner)
+        ownersViewModel.activeOwner(owner)
     }
 }

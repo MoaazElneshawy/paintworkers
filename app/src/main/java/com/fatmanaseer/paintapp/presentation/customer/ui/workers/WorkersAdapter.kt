@@ -26,7 +26,7 @@ class WorkersAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): WorkersViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_worker_fro_customer, parent, false)
+            .inflate(R.layout.item_worker_for_customer, parent, false)
         return WorkersViewHolder(view)
     }
 

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My App</string>
+    <string name="app_name">Decoration</string>
     <string name="db_name">MyApplicationDataBase</string>
     <string name="main_select_role">Select Role</string>
     <string name="main_admin">Admin</string>
@@ -55,7 +55,8 @@
     <string name="title_activity_customer">Customer</string>
     <string name="select_request">Select Request</string>
     <string name="make_order">Make Order</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="add_special_request">Add Special Request</string>
+    <string name="special_request">Special Request</string>
 
 </resources>

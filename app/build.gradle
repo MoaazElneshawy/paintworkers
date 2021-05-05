@@ -59,4 +59,6 @@ dependencies {
     // images picker
     implementation 'gun0912.ted:tedbottompicker:2.0.1'
 
+    // scalable image
+    implementation 'com.munon:turboimageview:1.2.0'
 }

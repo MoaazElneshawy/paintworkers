@@ -18,8 +18,13 @@
         android:theme="@style/Theme.MyApplication"
         tools:ignore="AllowBackup">
         <activity
+            android:name=".presentation.customer.ui.specialRequest.SpecialRequestActivity"
+            android:label="@string/special_request" />
+        <activity
             android:name=".presentation.customer.CustomerActivity"
-            android:label="@string/title_activity_customer"></activity>
+            android:label="@string/title_activity_customer"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".presentation.worker.WorkerActivity"
             android:label="@string/title_activity_worker"

@@ -15,12 +15,12 @@ class OwnersViewModel(application: Application) : AndroidViewModel(application) 
         get() = repo.getAllOwnersForAdmin()
 
     fun activeOwner(owner: Owner) {
-       runBlocking {   repo.activeOwnerByAdmin(owner)}
+        runBlocking { repo.activeOwnerByAdmin(owner) }
     }
 
     fun deleteOwner(ownerUsername: String) {
-       runBlocking {
-           repo.deleteOwnerByAdmin(ownerUsername)
-       }
+        runBlocking {
+            repo.deleteOwnerByAdmin(ownerUsername)
+        }
     }
 }

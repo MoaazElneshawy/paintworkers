@@ -1,5 +1,6 @@
 package com.fatmanaseer.paintapp.presentation.customer.ui.requests
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -11,6 +12,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.fatmanaseer.paintapp.R
 import com.fatmanaseer.paintapp.data.sharedData.SharedPref
+import com.fatmanaseer.paintapp.presentation.customer.ui.specialRequest.SpecialRequestActivity
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class CustomerRequestsFragment : Fragment() {
 
@@ -19,6 +22,7 @@ class CustomerRequestsFragment : Fragment() {
     private lateinit var sharedPref: SharedPref
 
     private lateinit var noRequestsTV: AppCompatTextView
+    private lateinit var addRequsetFab: FloatingActionButton
     private lateinit var requestsRV: RecyclerView
 
     override fun onCreateView(
@@ -31,6 +35,7 @@ class CustomerRequestsFragment : Fragment() {
         sharedPref = SharedPref(requireContext())
         val root = inflater.inflate(R.layout.fragment_customer_requests, container, false)
         noRequestsTV = root.findViewById(R.id.noRequestsTV)
+        addRequsetFab = root.findViewById(R.id.addRequestFAB)
         requestsRV = root.findViewById(R.id.requestsRV)
         return root
     }
@@ -38,7 +43,16 @@ class CustomerRequestsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         observeViewModel()
+        setOnClicks()
     }
+
+    private fun setOnClicks() {
+        addRequsetFab.setOnClickListener {
+            val intent = Intent(requireContext(), SpecialRequestActivity::class.java)
+            startActivity(intent)
+        }
+    }
+
 
     private fun observeViewModel() {
         requestsViewModel.getRequest(sharedPref.customerUsername)?.observe(viewLifecycleOwner) {
