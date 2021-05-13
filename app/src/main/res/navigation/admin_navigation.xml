@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_owners"
-        android:name="com.fatmanaseer.paintapp.presentation.admin.ui.owners.OwnersFragment"
+        android:name="com.fatmanaseer.decoration.presentation.admin.ui.owners.OwnersFragment"
         android:label="@string/title_owners"
         tools:layout="@layout/fragment_owners" />
 
     <fragment
         android:id="@+id/navigation_workers"
-        android:name="com.fatmanaseer.paintapp.presentation.admin.ui.workers.WorkersFragment"
+        android:name="com.fatmanaseer.decoration.presentation.admin.ui.workers.WorkersFragment"
         android:label="@string/title_workers"
         tools:layout="@layout/fragment_workers" />
 
     <fragment
         android:id="@+id/navigation_orders"
-        android:name="com.fatmanaseer.paintapp.presentation.admin.ui.orders.OrdersFragment"
+        android:name="com.fatmanaseer.decoration.presentation.admin.ui.orders.OrdersFragment"
         android:label="@string/title_orders"
         tools:layout="@layout/fragment_orders" />
 </navigation>

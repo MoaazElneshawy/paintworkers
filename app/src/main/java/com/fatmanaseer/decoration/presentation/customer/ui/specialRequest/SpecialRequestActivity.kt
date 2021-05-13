@@ -36,6 +36,7 @@ class SpecialRequestActivity : AppCompatActivity() {
     private lateinit var armchairIV: AppCompatImageView
     private lateinit var chestIV: AppCompatImageView
     private lateinit var wardrobeIV: AppCompatImageView
+    private lateinit var nightstandIV : AppCompatImageView
     private lateinit var turboImageView: TurboImageView
     private lateinit var furnitureLayout: LinearLayoutCompat
     private lateinit var playground: RelativeLayout
@@ -50,6 +51,7 @@ class SpecialRequestActivity : AppCompatActivity() {
         playground = findViewById(R.id.playground)
         armchairIV = findViewById(R.id.armchairIV)
         chestIV = findViewById(R.id.chestIV)
+        nightstandIV = findViewById(R.id.nightstandIV)
         wardrobeIV = findViewById(R.id.wardrobeIV)
         furnitureLayout = findViewById(R.id.furnitureLayout)
         doneFAB = findViewById(R.id.doneFAB)
@@ -101,6 +103,11 @@ class SpecialRequestActivity : AppCompatActivity() {
         chestIV.setOnClickListener {
             if (!deleteFAB.isVisible) deleteFAB.visibility = View.VISIBLE
             turboImageView.addObject(this, R.drawable.ic_chest_of_drawers)
+            selectedCount.value = selectedCount.value!! + 1
+        }
+        nightstandIV.setOnClickListener {
+            if (!deleteFAB.isVisible) deleteFAB.visibility = View.VISIBLE
+            turboImageView.addObject(this, R.drawable.ic_nightstand)
             selectedCount.value = selectedCount.value!! + 1
         }
 

@@ -7,31 +7,31 @@
 
     <fragment
         android:id="@+id/navigation_customer_wallpapers"
-        android:name="com.fatmanaseer.paintapp.presentation.customer.ui.wallpapers.CustomerWallpapersFragment"
+        android:name="com.fatmanaseer.decoration.presentation.customer.ui.wallpapers.CustomerWallpapersFragment"
         android:label="@string/title_wallpapers"
         tools:layout="@layout/fragment_customer_wallpapers" />
 
     <fragment
         android:id="@+id/navigation_customer_decoratives"
-        android:name="com.fatmanaseer.paintapp.presentation.customer.ui.decoratives.CustomerDecorativesFragment"
+        android:name="com.fatmanaseer.decoration.presentation.customer.ui.decoratives.CustomerDecorativesFragment"
         android:label="@string/title_decorative"
         tools:layout="@layout/fragment_customer_decoratives" />
 
     <fragment
         android:id="@+id/navigation_customer_workers"
-        android:name="com.fatmanaseer.paintapp.presentation.customer.ui.workers.CustomerWorkersFragment"
+        android:name="com.fatmanaseer.decoration.presentation.customer.ui.workers.CustomerWorkersFragment"
         android:label="@string/title_workers"
         tools:layout="@layout/fragment_customer_workers" />
 
     <fragment
         android:id="@+id/navigation_customer_requests"
-        android:name="com.fatmanaseer.paintapp.presentation.customer.ui.requests.CustomerRequestsFragment"
+        android:name="com.fatmanaseer.decoration.presentation.customer.ui.requests.CustomerRequestsFragment"
         android:label="@string/title_requests"
         tools:layout="@layout/fragment_customer_requests" />
 
     <fragment
         android:id="@+id/navigation_customer_orders"
-        android:name="com.fatmanaseer.paintapp.presentation.customer.ui.orders.CustomerOrdersFragment"
+        android:name="com.fatmanaseer.decoration.presentation.customer.ui.orders.CustomerOrdersFragment"
         android:label="@string/title_orders"
         tools:layout="@layout/fragment_customer_orders" />
 

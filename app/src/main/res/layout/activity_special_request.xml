@@ -59,7 +59,8 @@
         android:layout_alignParentBottom="true"
         android:layout_toStartOf="@id/addSpecialRequestFAB"
         android:orientation="horizontal"
-        android:visibility="gone">
+        android:visibility="gone"
+        tools:visibility="visible">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/armchairIV"
@@ -83,6 +84,14 @@
             android:layout_marginStart="10dp"
             android:scaleType="fitXY"
             app:srcCompat="@drawable/ic_wardrobe" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/nightstandIV"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ic_nightstand" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

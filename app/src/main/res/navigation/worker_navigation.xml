@@ -7,13 +7,13 @@
 
     <fragment
         android:id="@+id/navigation_orders"
-        android:name="com.fatmanaseer.paintapp.presentation.worker.ui.orders.WorkerOrdersFragment"
+        android:name="com.fatmanaseer.decoration.presentation.worker.ui.orders.WorkerOrdersFragment"
         android:label="@string/title_orders"
         tools:layout="@layout/fragment_worker_orders" />
 
     <fragment
         android:id="@+id/navigation_reviews"
-        android:name="com.fatmanaseer.paintapp.presentation.worker.ui.reviews.ReviewsFragment"
+        android:name="com.fatmanaseer.decoration.presentation.worker.ui.reviews.ReviewsFragment"
         android:label="@string/title_reviews"
         tools:layout="@layout/fragment_reviews" />
 
